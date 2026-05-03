@@ -19,6 +19,19 @@
 
 ---
 
+## 🧠 Intuition 
+
+This project builds a simple factor based on institutional money flow.
+
+The idea is:
+- Large investors can move prices, but not instantly
+- There is a short delay before the market fully reacts
+- This delay may create predictable returns over the next 10–20 days
+
+I test this idea using:
+- cross-sectional IC
+- quintile portfolio backtests
+
 ## 📜 Abstract
 
 We introduce a novel cross-sectional pricing factor — the **Smart-Dumb Lag (SDL)** — that captures the information asymmetry between institutional investors ("smart money") and retail traders ("dumb money") in the Chinese A-share market.
@@ -39,7 +52,7 @@ We demonstrate that **institutional capital flow intensity**, normalized for cro
 | **IC > 0%** | 50.4% | 53.0% | **64.5%** | **60.0%** |
 | Significance | ✗ | △ | ✓ | ✓ |
 
-> **Key finding**: The SDL factor achieves **statistically significant predictive power** at 10- and 20-day horizons (Newey-West robust t > 1.96), with a **monotonic quintile portfolio spread of +0.428% per 5 days** (≈ 21.6% annualized).
+> **Key finding**: The SDL factor achieves **statistically meaningful predictive ability** at 10- and 20-day horizons (Newey-West robust t > 1.96), with a **monotonic quintile portfolio spread of +0.428% per 5 days** (≈ 21.6% annualized).
 
 ---
 
@@ -284,18 +297,15 @@ sdl-factor-demo/
 
 ## 🎓 Application Value
 
-### For MFE/MCF/Quant Finance Admissions
+This project serves as a small-scale exploration of factor construction using money flow data.
 
-This project demonstrates:
+It reflects a typical workflow in quantitative research, including:
+- hypothesis formation
+- factor design
+- statistical testing
+- performance evaluation
 
-| Skill | Demonstrated by |
-|-------|----------------|
-| **Research methodology** | Full academic factor testing pipeline |
-| **Statistical rigour** | Newey-West HAC, ICIR, bootstrapped inference |
-| **Programming maturity** | Modular OOP design, parallel data fetching |
-| **Financial intuition** | Behavioural foundations, market microstructure |
-| **Result communication** | Publication-quality figures, clear exposition |
-| **Reproducibility** | `run.py --full` reproduces all results |
+The main value of this project is to build intuition about how market information may be incorporated into prices with a delay.
 
 ### Key Selling Points
 
