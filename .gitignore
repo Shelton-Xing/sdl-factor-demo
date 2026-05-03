@@ -1,0 +1,33 @@
+# SDL Factor Demo — .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Data files (auto-generated)
+data/*.csv
+data/*.json
+data/*.parquet
+
+# Results (charts auto-generated, reports manually placed)
+results/charts/*.png
+
+# Virtual environment
+venv/
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
